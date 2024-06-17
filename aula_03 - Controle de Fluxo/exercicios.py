@@ -26,16 +26,16 @@ else:
 Temperatura = [10,20,30,40,50,60]
 Classificacao = []
 
-for i in len(Temperatura):
+for i in Temperatura:
     
-    if Temperatura[i] < 25:
+    if i < 25:
         Classificacao.append("Baixo")
         
-    elif 26 < Temperatura[i] < 50:
+    elif 26 < i < 50:
         Classificacao.append("Intermediario")
         
     else:
-        Classificacao[i].append("Alto")
+        Classificacao.append("Alto")
         
 print(Classificacao)
     
@@ -128,11 +128,11 @@ print(usuarios_validos)
 numeros = [1,2,3,4,5,6,7,8,9,10]
 numeros_pares = []
 
-for x in len(numeros):
+for x in numeros:
     
     # Para ser um numero par o resto da divisao por 2 tem que ser 0.
-    if x[i] % 2 == 0:
-        numeros_pares.append(i)
+    if x % 2 == 0:
+        numeros_pares.append(x)
 
 print(numeros_pares)
 
@@ -160,6 +160,8 @@ print(total_por_categoria)
 
 ### Exercício 11. Leitura de Dados até Flag
 # Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
+
+entrada = input("Digite um valor (ou 'sair' para terminar): ")
 
 while entrada.lower() != "sair":
     entrada = input("Digite um valor (ou 'sair' para terminar): ")
